@@ -1,13 +1,22 @@
 public class OOPSBannerApp {
     public static void main(String[] args) {
-        System.out.println(String.join("", "   ***   ", " ", "    ***   ", " ", " ******   ", " ",  "    ***** "));
-        System.out.println(String.join("", " **   **  ", " ", " **   **  ", " ", "**    **  ", " ", " **      "));
-        System.out.println(String.join("", "**     ** ", " ", "**     ** ", " ", "**     ** ", " ", "**       "));
-        System.out.println(String.join("", "**     ** ", " ", "**     ** ", " ", "**    **  ", " ", " **      "));
-        System.out.println(String.join("", "**     ** ", " ", "**     ** ", " ", "******    ", " ", "   ***   "));
-        System.out.println(String.join("", "**     ** ", " ", "**     ** ", " ", "**        ", " ", "      ** "));
-        System.out.println(String.join("", "**     ** ", " ", "**     ** ", " ", "**        ", " ", "       **"));
-        System.out.println(String.join("", " **   **  ", " ", " **   **  ", " ", "**        ", " ", "      ** "));
-        System.out.println(String.join("", "   ***    ", " ", "   ***    ", " ", "**        ", " ", " *****   "));
+
+        // Array to hold OOPS banner lines
+        String[] lines = {
+            "   ***       ***      ******       ***** ",
+            " **   **    **   **   **    **    **      ",
+            "**     **  **     **  **     **  **       ",
+            "**     **  **     **  **    **    **      ",
+            "**     **  **     **  ******        ***   ",
+            "**     **  **     **  **               ** ",
+            "**     **  **     **  **                **",
+            " **   **    **   **   **               ** ",
+            "   ***        ***     **          *****   "
+        };
+
+        // Regular for loop
+        for (int i = 0; i < lines.length; i++) {
+            System.out.println(lines[i]);
+        }
     }
 }
